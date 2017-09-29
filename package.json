@@ -4,7 +4,7 @@
   "description": "A basic framework to create a dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "yarn test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
