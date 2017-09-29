@@ -4,11 +4,22 @@
   "description": "A basic framework to create a dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aheenam/vue-dashboard.git"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
   },
   "keywords": [
     "vuejs",
@@ -23,6 +34,16 @@
   },
   "homepage": "https://github.com/Aheenam/vue-dashboard#readme",
   "devDependencies": {
-    "jest": "^21.2.1"
+    "babel-core": "^6.24.1",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.2.1",
+    "jest-vue-preprocessor": "^1.2.0",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4"
+  },
+  "dependencies": {
+    "vue": "^2.4.4"
   }
 }
