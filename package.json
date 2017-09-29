@@ -1,0 +1,28 @@
+{
+  "name": "vue-dashboard",
+  "version": "0.1.0",
+  "description": "A basic framework to create a dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aheenam/vue-dashboard.git"
+  },
+  "keywords": [
+    "vuejs",
+    "javascript",
+    "dashboard",
+    "aheenam"
+  ],
+  "author": "Rathes Sachchithananthan <rathes@aheenam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aheenam/vue-dashboard/issues"
+  },
+  "homepage": "https://github.com/Aheenam/vue-dashboard#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
