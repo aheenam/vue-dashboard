@@ -159,3 +159,32 @@ You can add this clock just by adding it to your project and add it in the tile
   </tile>
 </dashboard>
 ```
+
+Changelog
+---
+Check [CHANGELOG](CHANGELOG.md) for the changelog
+
+Testing
+---
+To run tests use
+
+```bash
+yarn test
+```
+    
+Contributing
+---
+*soon*
+
+Security
+---
+If you discover any security related issues, please email rathes@aheenam.com or use the issue tracker of GitHub.
+
+About Aheenam
+---
+Aheenam is a small company from NRW, Germany creating custom digital solutions. Visit 
+[our website](https://aheenam.com) to find out more about us.
+
+License
+---
+The MIT License (MIT). Please see [License File](https://github.com/Aheenam/laravel-translatable/blob/master/LICENSE) for more information.
