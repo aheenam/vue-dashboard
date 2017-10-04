@@ -1,6 +1,6 @@
 {
   "name": "aheenam-vue-dashboard",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A basic framework to create a dashboard",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -45,11 +45,12 @@
     "jest": "^21.2.1",
     "jest-vue-preprocessor": "^1.2.0",
     "path": "^0.12.7",
+    "vue": "^2.4.4",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^2.4.4"
   }
 }
