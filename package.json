@@ -1,9 +1,11 @@
 {
   "name": "vue-dashboard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A basic framework to create a dashboard",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "NODE_ENV=production && webpack",
+    "prepublish": "npm run test; npm run build",
     "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
@@ -36,12 +38,15 @@
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-jest": "^21.2.0",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
     "jest": "^21.2.1",
     "jest-vue-preprocessor": "^1.2.0",
+    "path": "^0.12.7",
     "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4"
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0"
   },
   "dependencies": {
     "vue": "^2.4.4"
