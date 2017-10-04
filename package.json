@@ -1,6 +1,6 @@
 {
   "name": "vue-dashboard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A basic framework to create a dashboard",
   "main": "index.js",
   "scripts": {

@@ -1,11 +1,11 @@
-import Tab from './components/Dashboard';
-import Tabs from './components/Tile';
+import Dashboard from './components/Dashboard';
+import Tile from './components/Tile';
 
 export default {
     install (Vue) {
-        Vue.component('tab', Tab);
-        Vue.component('tabs', Tabs);
+        Vue.component('dashboard', Dashboard);
+        Vue.component('tile', Tile);
     }
 }
 
-export { Tab, Tabs };
+export { Dashboard, Tile };
