@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
+    "dev": "webpack",
     "build": "NODE_ENV=production webpack",
     "prepublish": "npm run test; npm run build",
     "test": "jest",

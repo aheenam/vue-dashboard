@@ -9,7 +9,9 @@ module.exports = {
 
     output: {
         path: path.resolve('./dist'),
-        filename: 'index.js'
+        filename: 'index.js',
+        library: 'aheenam-vue-dashboard',
+        libraryTarget: 'umd'
     },
 
     externals: {
