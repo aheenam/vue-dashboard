@@ -1,4 +1,4 @@
-import Dashboard from '../src/Dashboard'
+import Dashboard from '../src/components/Dashboard'
 import Vue from 'vue'
 
 describe('dashboard-test', () => {
