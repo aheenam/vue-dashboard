@@ -1,4 +1,4 @@
-import Tile from '../src/components/Tile'
+import { Tile } from '../src/index'
 import Vue from 'vue'
 
 describe('tile-test', () => {
