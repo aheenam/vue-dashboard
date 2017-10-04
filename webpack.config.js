@@ -35,13 +35,7 @@ module.exports = {
         extensions: ['.js', '.vue'],
     },
 
-    plugins: [
-
-        new webpack.LoaderOptionsPlugin({
-            minimize: inProduction
-        }),
-
-    ]
+    plugins: []
 
 };
 
