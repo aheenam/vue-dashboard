@@ -1,5 +1,3 @@
-**Not finished yet. Do not use in production**
-
 A Vue component to build a CSS Grid Dashboard
 ===
 This simple package provides two components to create a simple grid to create a dashboard. This package is inspired by the awesome [dashboard project created by Spatie](https://github.com/spatie/dashboard.spatie.be).
@@ -67,90 +65,7 @@ There is no styling applied to this elements. The only CSS that is used is the u
 
 What about the dashboard contents? It is up to you what you want to display in these tiles. It can be some plain text as shown in the example but also be some complex component that you or someone in the community created.
 
-In the future we will share some components that we built for ourself.
-
-Take this clock component for example:
-
-```html
-<template>
-  <div class="clock">
-    <div class="date">
-      {{ dateTime.format('ddd MM/DD') }}
-    </div>
-    <div class="time">
-      {{ dateTime.format('HH:mm:ss') }}
-    </div>
-    <div class="timezone">
-      {{ timezone.replace('_', ' ').replace('/', ' / ') }}
-    </div>
-  </div>
-</template>
-
-<script>
-import moment from 'moment-timezone'
-
-export default {
-  name: 'clock',
-  props: {
-    timezone: {
-      type: String,
-      default: 'Europe/Berlin'
-    }
-  },
-  data () {
-    return {
-      dateTime: moment().tz(this.timezone)
-    }
-  },
-  created () {
-    this.dateTime = moment.tz(this.timezone)
-    this.tick()
-  },
-  methods: {
-    tick () {
-      setInterval(() => {
-        this.dateTime = moment().tz(this.timezone)
-      }, 1000)
-    }
-  }
-}
-</script>
-
-<style>
-.clock {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.timezone {
-  display: block;
-  font-size: 0.5em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 3em;
-}
-
-.date {
-  font-size: 1em;
-  font-family: monospace;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-}
-
-.time {
-  font-size: 2em;
-  font-family: monospace;
-}
-</style>
-
-```
-
-You can add this clock just by adding it to your project and add it in the tile
+Take the [Clock component](https://github.com/Aheenam/vue-dashboard-clock) we have published. If you want to use this in one of you tile, just import it and add it into your tile:
 
 ```html
 <dashboard  :rows="4" :columns="4">
@@ -159,6 +74,8 @@ You can add this clock just by adding it to your project and add it in the tile
   </tile>
 </dashboard>
 ```
+
+Going this way makes it possible to keep this dashboard package as clean as possible. Also you can choose from almost any of the other packages out there.
 
 Changelog
 ---
